@@ -43,9 +43,10 @@ recognition.addEventListener('error', (e) => {
 function synthVoice(text) {
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance();
+  const voice = new SpeechSynthesisVoice();
   utterance.text = text;
   utterance.lang = 'es-ES';
-  utterance.voice = 'es-ES';
+  voice.lang = 'es-ES';
   synth.speak(utterance);
 }
 
