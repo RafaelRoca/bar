@@ -45,6 +45,7 @@ function synthVoice(text) {
   const utterance = new SpeechSynthesisUtterance();
   utterance.text = text;
   utterance.lang = 'es-ES';
+  utterance.voice = 'es-ES';
   synth.speak(utterance);
 }
 
